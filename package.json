@@ -1,0 +1,24 @@
+{
+  "name": "vue-diy-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "ZhengKang",
+  "license": "ISC",
+  "bin": {
+    "vue-diy-cli": "./bin/cli.js"
+  },
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "commander": "^10.0.1",
+    "download-git-repo": "^3.0.2",
+    "fs-extra": "^11.1.1",
+    "inquirer": "^8.2.5",
+    "log-symbols": "^3.0.0",
+    "ora": "^5.4.1"
+  }
+}
