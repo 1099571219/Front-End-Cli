@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare":"husky install",
+    "commit": "cz"
   },
   "keywords": [],
   "author": "ZhengKang",
@@ -20,5 +22,20 @@
     "inquirer": "^8.2.5",
     "log-symbols": "^3.0.0",
     "ora": "^5.4.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.5",
+    "@commitlint/config-conventional": "^17.6.5",
+    "cz-conventional-changelog": "^3.3.0",
+    "cz-customizable": "^7.0.0",
+    "commitizen": "^4.3.0",
+    "husky": "^8.0.3",
+    "prettier": "^2.8.8"
+  },
+  "config": {
+    "cz-customizable": {
+      "config": ".cz-config.cjs"
+    }
   }
+ 
 }
