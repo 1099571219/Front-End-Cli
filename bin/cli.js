@@ -1,3 +1,3 @@
 #! /usr/bin/env node
 
-require('../src/create')
+require('../dist/create')

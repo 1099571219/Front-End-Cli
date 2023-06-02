@@ -1,30 +1,40 @@
 {
   "name": "vue-ziy-cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
-    "commit": "cz"
+    "commit": "cz",
+    "compile": "babel src --out-dir dist --source-maps --watch ",
+    "watch": "npm run compile --watch"
   },
   "keywords": [],
   "author": "ZhengKang",
   "license": "ISC",
+  "files": [
+    "bin",
+    "dist"
+  ],
+  "readme": "./README.md",
   "bin": {
-    "vue-diy-cli": "./bin/cli.js",
-    "vdc": "./bin/cli.js"
+    "vue-ziy-cli": "./bin/cli.js",
+    "vzc": "./bin/cli.js"
   },
   "dependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/preset-env": "^7.20.2",
     "chalk": "^3.0.0",
     "commander": "^10.0.1",
-    "download-git-repo": "^3.0.2",
     "fs-extra": "^11.1.1",
     "inquirer": "^8.2.5",
     "log-symbols": "^3.0.0",
-    "ora": "^5.4.1"
+    "ora": "^5.4.1",
+    "vue-ziy-cli": "^0.0.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.22.1",
     "@commitlint/cli": "^17.6.5",
     "@commitlint/config-conventional": "^17.6.5",
     "commitizen": "^4.3.0",
@@ -37,5 +47,8 @@
     "cz-customizable": {
       "config": ".cz-config.cjs"
     }
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   }
 }
