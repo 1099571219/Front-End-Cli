@@ -1,18 +1,19 @@
 {
-  "name": "vue-diy-cli",
-  "version": "1.0.0",
+  "name": "vue-ziy-cli",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare":"husky install",
+    "prepare": "husky install",
     "commit": "cz"
   },
   "keywords": [],
   "author": "ZhengKang",
   "license": "ISC",
   "bin": {
-    "vue-diy-cli": "./bin/cli.js"
+    "vue-diy-cli": "./bin/cli.js",
+    "vdc": "./bin/cli.js"
   },
   "dependencies": {
     "chalk": "^3.0.0",
@@ -26,9 +27,9 @@
   "devDependencies": {
     "@commitlint/cli": "^17.6.5",
     "@commitlint/config-conventional": "^17.6.5",
+    "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
     "cz-customizable": "^7.0.0",
-    "commitizen": "^4.3.0",
     "husky": "^8.0.3",
     "prettier": "^2.8.8"
   },
@@ -37,5 +38,4 @@
       "config": ".cz-config.cjs"
     }
   }
- 
 }
